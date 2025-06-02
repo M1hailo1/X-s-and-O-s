@@ -60,7 +60,7 @@ function isValid(field) {
 
 function fillField(field, index) {
   if (isValid(field) && !gameOver) {
-    field.innerHTML = `<img class="icon" src='Images/${currentPlayer}.svg'>`;
+    field.innerHTML = `<img class="icon" src='/Images/${currentPlayer}.svg'>`;
     updateFields(index);
     handleResults();
     swapPlayer();
