@@ -39,8 +39,7 @@ function handleResults() {
     gameOver = true;
     return;
   }
-  if (currentFields.includes("") && roundResult)
-    resultMessage.innerText = "No one won";
+  if (!currentFields.includes("")) resultMessage.innerText = "No one won";
 }
 
 function updateFields(index) {
